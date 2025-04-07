@@ -10,6 +10,8 @@ The system simulates IoT sensors, processes real-time data using **Azure IoT Hub
 ---
 
 ##  System Architecture
+![image](https://github.com/user-attachments/assets/ff91f932-27e3-4dba-9aed-3d696255393a)
+
 
 
 
@@ -52,7 +54,7 @@ The system simulates IoT sensors, processes real-time data using **Azure IoT Hub
 ###  Azure IoT Hub Configuration
 
 - Created via Azure Portal
-- Device registered: `canalSensorDevice`
+- Device registered: `Satyam8915`
 - Connection string used in Python script
 - Routes messages to default endpoint for processing
 
@@ -79,15 +81,6 @@ GROUP BY
 ```
 
 - **Output**: Azure Blob Storage (JSON or CSV)
-
----
-
-### ☁️ Azure Blob Storage
-
-- Container: `processed-data`
-- Folder Structure: `location/yyyy/MM/dd/hh/`
-- File Naming Convention: `location-<timestamp>.json`
-- Format: JSON (optional CSV if configured)
 
 ---
 
@@ -132,7 +125,7 @@ GROUP BY
 ### 3. Access Stored Data
 
 1. Go to Azure Portal > Storage Account
-2. Open blob container (`processed-data`)
+2. Open blob container (`iotoutput`)
 3. Browse folders by date/location
 4. Download JSON/CSV files to view aggregated results
 
@@ -145,7 +138,7 @@ GROUP BY
 ```json
 {
   "location": "Dow's Lake",
-  "windowEnd": "2024-11-23T12:05:00Z",
+  "windowEnd": "2025-11-07T12:05:00Z",
   "avgIceThickness": 28.3,
   "maxSnowAccumulation": 10
 }
