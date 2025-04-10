@@ -158,7 +158,6 @@ GROUP BY
 
 - Connecting Python simulation to IoT Hub required correct device setup and connection string.
 - Timestamps in payloads were essential for correct aggregation windows.
-- Ensuring proper routing between services in Azure took careful validation.
 
 ### Solutions:
 
