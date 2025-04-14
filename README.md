@@ -147,7 +147,7 @@ GROUP BY
 ### Findings:
 
 - Data is accurately grouped in 5-minute windows.
-- Aggregates (average thickness, max snow) allow quick condition assessment.
+- Aggregates (max snow, average thickness) provide rapid condition evaluation.
 - Output ready for dashboards or reports.
 
 ---
@@ -157,13 +157,13 @@ GROUP BY
 ### Challenges Faced:
 
 - Connecting Python simulation to IoT Hub required correct device setup and connection string.
-- Timestamps in payloads were essential for correct aggregation windows.
+- Payload timestamps were necessary to ensure proper aggregation frames.
 
 ### Solutions:
 
-- Thorough testing of the payloads and device client.
-- Timestamp debugging using IoT Hub logs and Stream Analytics diagnostics.
-- Verified blob storage outputs by downloading and inspecting sample files.
+- Extensive testing of the device client and payloads.
+- IoT Hub logs and Stream Analytics diagnostics are used for timestamp debugging.
+- Blob storage outputs were confirmed by downloading and examining test files.
 
 
 
